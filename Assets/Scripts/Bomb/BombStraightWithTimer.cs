@@ -17,7 +17,7 @@ namespace BombsTest.Bomb
             if(m_StartedTimer)
                 return;
             
-            var colliders = new Collider[20]; // тут магическое число 20 из предположения, что рядом не будет более 20 объектов
+            var colliders = new Collider[maxCollidersToInteract];
             if (Physics.OverlapSphereNonAlloc(transform.position, explodeRadius, colliders) > 0)
             {
 #pragma warning disable CS4014

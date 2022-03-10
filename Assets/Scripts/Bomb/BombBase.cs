@@ -9,6 +9,7 @@ namespace BombsTest.Bomb
     {
         [SerializeField] protected float explodeRadius;
         [SerializeField] protected float damage;
+        [SerializeField] protected int maxCollidersToInteract = 20; // тут магическое число 20 из предположения, что рядом не будет более 20 объектов
         [SerializeField] private LayerMask maskToExplode;
 
         protected abstract void Explode();

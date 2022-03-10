@@ -17,6 +17,8 @@ namespace BombsTest.Spawner
         private MeshFilter m_FloorMeshFilter;
         private List<Vector3> m_Positions = new List<Vector3>();
 
+        // На самом деле думаю спавнер и действия бомб можно было сделать удобнее и обстрактнее, но под текущую задачу кажется и такого хватит
+        
         private void Start()
         {
             m_FloorMeshFilter = floor.GetComponent<MeshFilter>() ??
